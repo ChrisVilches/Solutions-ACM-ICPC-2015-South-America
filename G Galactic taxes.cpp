@@ -33,7 +33,7 @@ ld dijkstra(vector<arista> grafo[], ld tiempo){
 	ld dist[nodos];
 	bool vis[nodos];
 	fill(dist, dist+nodos, INF);
-    fill(vis, vis+nodos, false);
+	fill(vis, vis+nodos, false);
 
 	priority_queue<par> q;
 	q.push(par(0, 0));
