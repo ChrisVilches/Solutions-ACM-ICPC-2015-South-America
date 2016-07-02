@@ -31,10 +31,8 @@ public:
 // Entrada: grafo como lista de adyacencias, y el tiempo.
 ld dijkstra(vector<arista> grafo[], ld tiempo){
 	ld dist[nodos];
-	bool vis[nodos];
 	fill(dist, dist+nodos, INF);
-	fill(vis, vis+nodos, false);
-
+	dist[0] = 0;
 	priority_queue<par> q;
 	q.push(par(0, 0));
 	while(!q.empty()){
@@ -42,20 +40,13 @@ ld dijkstra(vector<arista> grafo[], ld tiempo){
 		q.pop();
 		int u = top.n;
 		ld peso = top.dist;
-
-		if(vis[u]) continue;
-
-		dist[u] = peso;
-		vis[u] = true;
-
+		if(peso > dist[u]) continue;
 		for(arista ady : grafo[u]){ 
 			int v = ady.nodo; 
-			if(!vis[v]){
-				ld alt = dist[u] + ady.get_peso(tiempo);
-				if(alt < dist[v]){
-					dist[v] = alt;
-					q.push(par(v, dist[v]));
-				}
+			ld alt = dist[u] + ady.get_peso(tiempo);
+			if(alt < dist[v]){
+				dist[v] = alt;
+				q.push(par(v, dist[v]));			
 			}
 		} 
 	}
@@ -64,14 +55,14 @@ ld dijkstra(vector<arista> grafo[], ld tiempo){
 
 int main(){
 
-	while(cin>>nodos>>conexiones){
+	while(scanf("%d %d", &nodos, &conexiones)==2){
 
 		vector<arista> grafo[nodos]; // grafo = listas de adyacencias
 
 		for(int i=0; i<conexiones; i++){ // construir el grafo
 			int nodo1, nodo2;
 			ld A, B;
-			cin>>nodo1>>nodo2>>A>>B;
+			scanf("%d %d %Lf %Lf", &nodo1, &nodo2, &A, &B);
 			nodo1--; nodo2--;
 			grafo[nodo1].push_back(arista(A, B, nodo2));
 			grafo[nodo2].push_back(arista(A, B, nodo1));
