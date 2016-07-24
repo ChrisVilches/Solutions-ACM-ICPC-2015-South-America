@@ -77,7 +77,7 @@ En el ejemplo anterior, cada secuencia Just a bit sorted, tiene una lista asocia
 
 Esto demuestra que la cantidad total de secuencias válidas es el mismo que al calcular el número de permutaciones con K incrementos con el triángulo de Euler, luego de mapear las Just a bit sorted lists a permutaciones del conjunto {1, 2, 3, 4, …n}. El problema se traduce perfectamente a simplemente ocupar la fórmula de los números de Euler.
 
-Dado que las listas Just a bit sorted permiten que no necesariamente estén todos los números desde 1 hasta K (es decir si K=100, una lista no necesariamente debe tener todos los números desde 1 hasta 100), uno puede sumar todas los resultados de una fila del triángulo, empezando desde la fila N, en la primera posicion, e iterando hasta la posición K de esa misma fila. Se debe calcular las sumas acumuladas para así consultarlas en orden O(1).
+Dado que las listas Just a bit sorted permiten que no necesariamente estén todos los números desde 1 hasta K (es decir si K=100, una lista no necesariamente debe tener todos los números desde 1 hasta 100), uno puede sumar todas los resultados de una fila del triángulo, empezando desde la fila N, en la primera posicion (K=1, ya que K=0 no es un valor permitido en este problema), e iterando hasta la posición K de esa misma fila. Se debe calcular las sumas acumuladas para así consultarlas en orden O(1).
 
 Por ejemplo, cuando N=3 y K=2, en el triángulo, sumamos 1+4 = 5. Este resultado es correcto ya que la cantidad posible de secuencias son 5. También se da el caso especial en que si N=K, al sumar toda la fila, se obtiene N! (factorial de N). Por ejemplo si N=K=5, existe un total de 5! = 1 + 26 + 66 + 26 + 1 = 120 Just a bit sorted lists.
 
