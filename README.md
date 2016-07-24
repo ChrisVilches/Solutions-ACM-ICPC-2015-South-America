@@ -28,15 +28,15 @@ Si tomamos k=2, solo existe una permutación, la {1, 2, 3} que tiene dos pares e
 
 Con la fórmula de Euler, se genera siempre el siguiente triángulo:
 
-|||||||||
-|---|---|---|---|---|---|---|---|
-|1|||||||
-|1|1||||||
-|1|4|1|||||
-|1|11|11|1||||
-|1|26|66|26|1|||
-|1|57|302|302|57|1||
-|1|120|1191|2416|1191|120|1|
+|N/K||||||||
+|---|---|---|---|---|---|---|---|---|---|
+||1|||||||
+||1|1||||||
+||1|4|1|||||
+||1|11|11|1||||
+||1|26|66|26|1|||
+||1|57|302|302|57|1||
+||1|120|1191|2416|1191|120|1|
 
 Cuando k=0, siempre existe solo 1 posible permutación, que corresponde a {n, n-1, …, 4, 3, 2, 1} (orden descendente), y para el caso de k=n-1, también existe una posible permutación, que es en orden ascendente. Por ejemplo n=3, k=2, la permutación es {1, 2, 3}.
 
@@ -44,8 +44,7 @@ Ahora se mapea las listas Just a bit sorted con este triángulo. En el problema,
 
 Para n=3, y k=2, todas las listas Just a bit sorted que existen son:
 
-|||
-|---|---|
+|---|
 |1 1 1|
 |1 1 2|
 |1 2 1|
@@ -60,7 +59,7 @@ Por ejemplo en la lista {3, 2, 1, 2, 2, 3}, el número 1 ocurre en la posición 
 
 En el ejemplo anterior, cada secuencia Just a bit sorted, tiene una lista asociada:
 
-|Just a bit sorted list| Mapeo a permutacion de {1, 2, 3, ...n}
+|Just a bit sorted list| Mapeo a permutaciones de {1, 2, 3, ...n}
 |---|---|
 |1 1 1|1 2 3|
 |1 1 2|3 1 2|
