@@ -9,7 +9,7 @@ El problema se resuelve con una implementación casi directa del triángulo de n
 
 ##Triángulo de Euler
 
-El triángulo de Euler es una fórmula matemática que puede, tomando dos parámetros n y k, entregar el número de permutaciones del conjunto {1,2,3,4...n} en donde existen k pares de números en donde el primero es menor al segundo.
+El triángulo de Euler es una fórmula matemática que puede, tomando dos parámetros n y k, entregar el número de permutaciones del conjunto {1,2,3,4...n} en donde existen k pares de números adyacentes en donde el primero es menor al segundo.
 
 Por ejemplo para n=3 las permutaciones posibles son:
 
