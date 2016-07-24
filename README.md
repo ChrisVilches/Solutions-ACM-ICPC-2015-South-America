@@ -28,15 +28,13 @@ Si tomamos k=2, solo existe una permutación, la {1, 2, 3} que tiene dos pares e
 
 Con la fórmula de Euler, se genera siempre el siguiente triángulo:
 
-|N/K||||||||
-|---|---|---|---|---|---|---|---|---|---|
-||1|||||||
-||1|1||||||
-||1|4|1|||||
-||1|11|11|1||||
-||1|26|66|26|1|||
-||1|57|302|302|57|1||
-||1|120|1191|2416|1191|120|1|
+|1|||||||
+|1|1||||||
+|1|4|1|||||
+|1|11|11|1||||
+|1|26|66|26|1|||
+|1|57|302|302|57|1||
+|1|120|1191|2416|1191|120|1|
 
 Cuando k=0, siempre existe solo 1 posible permutación, que corresponde a {n, n-1, …, 4, 3, 2, 1} (orden descendente), y para el caso de k=n-1, también existe una posible permutación, que es en orden ascendente. Por ejemplo n=3, k=2, la permutación es {1, 2, 3}.
 
