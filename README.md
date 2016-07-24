@@ -29,7 +29,7 @@ Si tomamos k=2, solo existe una permutación, la {1, 2, 3} que tiene dos pares e
 Con la fórmula de Euler, se genera siempre el siguiente triángulo:
 
 |N / K|*0*|*1*|*2*|*3*|*4*|*5*|*6*|
-|---|---|---|---|---|---|---|
+|---|---|---|---|---|---|---|---|
 |*1*|1|||||||
 |*2*|1|1||||||
 |*3*|1|4|1|||||
@@ -44,6 +44,7 @@ Ahora se mapea las listas Just a bit sorted con este triángulo. En el problema,
 
 Para n=3, y k=2, todas las listas Just a bit sorted que existen son:
 
+|Secuencias posibles para N=3 y K=2|
 |---|
 |1 1 1|
 |1 1 2|
@@ -51,6 +52,8 @@ Para n=3, y k=2, todas las listas Just a bit sorted que existen son:
 |1 2 2|
 |2 1 2|
 
+
+## Mapeo al triángulo de Euler
 
 
 Para cada lista, podemos crear listas de posiciones en donde ocurre cada número en la lista original. La idea es encontrar una correspondencia con el triángulo de Euler.
