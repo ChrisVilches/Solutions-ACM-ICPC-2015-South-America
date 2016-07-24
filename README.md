@@ -28,6 +28,7 @@ Si tomamos k=2, solo existe una permutación, la {1, 2, 3} que tiene dos pares e
 
 Con la fórmula de Euler, se genera siempre el siguiente triángulo:
 
+|---|---|---|---|---|---|---|
 |1|||||||
 |1|1||||||
 |1|4|1|||||
