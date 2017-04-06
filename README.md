@@ -3,11 +3,11 @@
 
 Soluciones de los problemas de la ACM ICPC 2015.
 
-#Análisis del problema J - Just a bit sorted
+# Análisis del problema J - Just a bit sorted
 
 El problema se resuelve con una implementación casi directa del triángulo de números de Euler.
 
-##Triángulo de Euler
+## Triángulo de Euler
 
 El triángulo de Euler es una fórmula matemática que puede, tomando dos parámetros n y k, entregar el número de permutaciones del conjunto {1,2,3,4...n} en donde existen k pares de números adyacentes en donde el primero es menor al segundo.
 
