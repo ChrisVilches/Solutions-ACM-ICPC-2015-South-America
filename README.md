@@ -2,7 +2,7 @@
 
 Soluciones de los problemas de la ACM ICPC 2015.
 
-# Soluciones actualizadas
+## Soluciones actualizadas
 
 Nuevas soluciones hechas entre 2020 y 2021. Código mas limpio y elegante.
 
@@ -18,11 +18,11 @@ Nuevas soluciones hechas entre 2020 y 2021. Código mas limpio y elegante.
 * [J - Just a Bit Sorted](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2009-just_a_bit_sorted.cpp)
 * [K - Keep it Energized](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2010-keep_it_energized.cpp)
 
-# Análisis del problema J - Just a bit sorted
+## Análisis del problema J - Just a bit sorted
 
 El problema se resuelve con una implementación casi directa del triángulo de números de Euler.
 
-## Triángulo de Euler
+### Triángulo de Euler
 
 El triángulo de Euler es una fórmula matemática que puede, tomando dos parámetros n y k, entregar el número de permutaciones del conjunto {1,2,3,4...n} en donde existen k pares de números adyacentes en donde el primero es menor al segundo.
 
@@ -68,7 +68,7 @@ Para n=3, y k=2, todas las listas Just a bit sorted que existen son:
 |2 1 2|
 
 
-## Mapeo al triángulo de Euler
+### Mapeo al triángulo de Euler
 
 
 Para cada lista, podemos crear listas de posiciones en donde ocurre cada número en la lista original. La idea es encontrar una correspondencia con el triángulo de Euler.
