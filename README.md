@@ -1,7 +1,22 @@
 # Solutions ACM ICPC 2015 South America
 
-
 Soluciones de los problemas de la ACM ICPC 2015.
+
+# Soluciones actualizadas
+
+Nuevas soluciones hechas entre 2020 y 2021. Código mas limpio y elegante.
+
+* [A - At Most Twice](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2013-at_most_twice.cpp)
+* [B - Blood Groups](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2014-blood_groups.cpp)
+* [C - Cake Cut](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2015-cake_cut.cpp)
+* D - D as in Daedalus
+* [E - Exposing Corruption](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2008-exposing_corruption.cpp)
+* [F - Fence the Vegetables Fail](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2007-fence_the_vegetables_fail.cpp)
+* [G - Galactic Taxes](https://github.com/ChrisVilches/Algorithms/blob/main/uva/13010-galactic_taxes.cpp)
+* [H - Height Map](https://github.com/ChrisVilches/Algorithms/blob/main/uva/13011-height_map.cpp)
+* I - Identifying Tea
+* [J - Just a Bit Sorted](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2009-just_a_bit_sorted.cpp)
+* [K - Keep it Energized](https://github.com/ChrisVilches/Algorithms/blob/main/urionlinejudge/2010-keep_it_energized.cpp)
 
 # Análisis del problema J - Just a bit sorted
 
